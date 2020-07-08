@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title> Sample Site: EID FED BASIC </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='style.css'>
+        <link rel='stylesheet' href='responsive-style.css'>
+    </head>
+    <body>
+        <nav>
+            <img src='images/Logo.PNG' width='150px'>
+            <button id='carticon'><img src='images/cart-icon.PNG' width='30px'></button>
+        </nav>
+
+        <div id='modal' class='modal'>
+            <div class='cart-modal'>
+                <span class='closebtn'>&times;</span>
+                <p id='modal-title'>SHOPPING CART</p> 
+            </div>
+            <div id='cart-modal' class='cart-modal'> </div>
+        </div>
+
+
+        <div class='head-carousel'>
+            <div class='carousel-container fade'>
+                <p id='carousel-title'>Present your awesome product</p>
+                <p id='carousel-subtitle'>Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit.
+                    Culpa reiciendis praesentium laudantium. <br> 
+                    Molestiae tenetur consequuntur eaque itaque 
+                    psum sed perspiciatis ipsa suscipit velit, 
+                    unde, recusandae expedita perferendis dicta hic 
+                    repellendus?</p>
+                <button onClick='addCart(0)'>Buy Now</button>
+                <div id='carousel-img'><img src='images/prod1.png'></div>
+            </div>
+            <div class='carousel-container fade'>
+                <p id='carousel-title'>Present your awesome product</p>
+                <p id='carousel-subtitle'>Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit.
+                    Culpa reiciendis praesentium laudantium. <br> 
+                    Molestiae tenetur consequuntur eaque itaque 
+                    psum sed perspiciatis ipsa suscipit velit, 
+                    unde, recusandae expedita perferendis dicta hic 
+                    repellendus?</p>
+                <button onClick='addCart(1)'>Buy Now</button>
+                <div id='carousel-img'><img src='images/prod2.png'></div>
+            </div>
+
+            <div class='carousel-container fade'>
+                <p id='carousel-title'>Present your awesome product</p>
+                <p id='carousel-subtitle'>Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit.
+                    Culpa reiciendis praesentium laudantium. <br> 
+                    Molestiae tenetur consequuntur eaque itaque 
+                    psum sed perspiciatis ipsa suscipit velit, 
+                    unde, recusandae expedita perferendis dicta hic 
+                    repellendus?</p>
+                <button onClick='addCart(2)'>Buy Now</button>
+                <div id='carousel-img'><img src='images/prod3.png'></div>
+            </div>
+
+            <a class='prev' onclick="nextSlides(-1)">&#10094</a>
+            <a class='next' onclick="nextSlides(1)">&#10095</a>
+        </div>
+
+        <div id='products-section'> </div>
+
+        <script src='script.js'></script>
+    </body>
+</html>

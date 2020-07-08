@@ -1,0 +1,232 @@
+body{
+    margin:0;
+    font-family: calibri;
+}
+
+
+
+/* Navigation Bar -------------------------------------------- */
+nav{
+    border-bottom: solid #c2c2c2 0.5px;
+    padding:10px 30px;
+}
+nav img{ padding: 5px; }
+
+#carticon{
+    float: right;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+    margin: 0;
+    padding: 5px;
+}
+#carticon:hover{ 
+    cursor: pointer;
+    background-color: #cfcfcf; 
+}
+/* ----------------------------------------------------------- */
+
+
+
+/* Modal ----------------------------------------------------- */
+    .modal{
+        display: none;
+        position: fixed;
+        z-index: 1;
+
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+    }
+    #modal-title{
+        /* margin: 0; */
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .cart-modal{
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px 30px;
+        width: 50%;
+    }
+    #cart-modal{
+        padding: 0 30px 20px;
+    }
+    .closebtn{
+        cursor: pointer;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #shopList-container{
+        border: solid #e6e6e6 0.5px;
+        margin: 5px;
+        padding: 15px;
+        width: 35%;
+
+        display: inline-grid;
+        grid-template-columns: minmax(20px, auto);
+        grid-template-rows: minmax(20px, auto);
+    }
+    #shopList-container:hover{
+        background-color: rgba(0,0,0,0.2);
+    }
+    #shopList-container p{
+        margin:0;
+    }
+    #shopList-name, #shopList-price{
+        font-weight: bold;
+        padding: 0 10px;
+    }
+    #shopList-name{
+        font-size: 14px;
+        color: #7d7d7d;
+    }
+    #shopList-price{
+        font-size: 20px;
+    }
+    #shopList-img{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+        height: 100px;
+        width: 80px;
+
+
+    }
+/* ----------------------------------------------------------- */
+
+
+
+
+
+
+
+/* Carousel -------------------------------------------------- */
+.head-carousel{ 
+    /* background-color: #261075; */
+    background-image: radial-gradient(closest-side at 60% 55%, #5640a3, #422c91, #261075);
+}
+.carousel-container{
+    display: grid;
+    grid-template-columns: minmax(20px, auto);
+    grid-template-rows: minmax(20px, auto);
+
+    margin: 25px 0;
+    padding: 50px;
+}
+.carousel-container p{
+    color: whitesmoke;
+    margin: 0;
+}
+.carousel-container img{ 
+    /* height: 250px;
+    width: 200px; */
+    width: 12rem;
+}
+.carousel-container button{
+    height: 30px;
+    width: 150px;
+}
+
+.carousel-container #carousel-title{ font-size: 40px; }
+.carousel-container #carousel-subtitle{font-size: 15px;}
+.carousel-container #carousel-img{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 1 / span 3;
+
+    justify-self: center;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 240px;
+
+    width: auto;
+    padding: 16px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Content --------------------------------------------------- */
+    .products-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #prod-item{
+        display: inline-block;
+        border: solid #e6e6e6 0.5px;
+        margin: 15px;
+        width: 200px;
+    }
+    #prod-item img{
+        margin: 5px 25px;
+        height: 175px;
+        width: 150px;
+    }
+    #prod-item button{
+        width: 100%;
+        padding: 15px;
+        /* border: none;
+        border-top: solid #c2c2c2 0.5px; */
+    }
+    ul{
+        list-style: none;
+
+        padding-inline-start: 0;
+        margin:0;
+        padding: 20px;
+    }
+
+    #prod-item-title{
+        font-weight: bold;
+        font-size: 18px;
+        color: #3733b5;
+    }
+    #prod-item-subtitle{
+        font-size: 12px;
+        color: #7d7d7d;
+    }
+    #prod-item-brand{
+        font-size: 15px;
+        font-weight: bold;
+        color: #7d7d7d;
+    }
+    #prod-item-price{
+        font-weight: bold;
+        font-size: 20px;
+    }
+/* ----------------------------------------------------------- */
